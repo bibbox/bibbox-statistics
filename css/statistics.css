@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+#root {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto; }
+  #root * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica", "Arial", "sans-serif"; }
+  #root #component-root {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; }
+    #root #component-root .statistics-panel {
+      flex-basis: 48%;
+      min-width: 400px;
+      background: white;
+      padding: 40px 50px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px; }
+      #root #component-root .statistics-panel .statistics-head {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 25px; }
+        #root #component-root .statistics-panel .statistics-head a {
+          display: inline-block;
+          width: 100%;
+          text-decoration: none !important;
+          -webkit-box-shadow: none;
+          box-shadow: none; }
+          #root #component-root .statistics-panel .statistics-head a img {
+            float: left;
+            clear: both;
+            width: 45px;
+            margin-right: 15px; }
+          #root #component-root .statistics-panel .statistics-head a .title-head {
+            float: left;
+            clear: none;
+            line-height: 45px;
+            color: #1a6fb8;
+            font-size: 30px;
+            font-weight: normal; }
+          #root #component-root .statistics-panel .statistics-head a .count-head {
+            float: right;
+            line-height: 45px;
+            color: #1a6fb8;
+            font-size: 30px; }
+        #root #component-root .statistics-panel .statistics-head a:hover h1, #root #component-root .statistics-panel .statistics-head a:hover .count-head {
+          color: #568db8; }
+      #root #component-root .statistics-panel .statistics-sub {
+        display: inline-block;
+        width: 100%;
+        margin-top: 10px; }
+        #root #component-root .statistics-panel .statistics-sub a {
+          display: inline-block;
+          width: 100%;
+          text-decoration: none !important;
+          -webkit-box-shadow: none;
+          box-shadow: none; }
+          #root #component-root .statistics-panel .statistics-sub a img {
+            float: left;
+            clear: both;
+            width: 35px;
+            margin-left: 5px;
+            margin-right: 15px; }
+          #root #component-root .statistics-panel .statistics-sub a .title-sub {
+            float: left;
+            clear: none;
+            line-height: 35px;
+            font-size: 22px;
+            font-weight: normal; }
+          #root #component-root .statistics-panel .statistics-sub a .count-sub {
+            float: right;
+            line-height: 35px;
+            font-size: 22px; }
+        #root #component-root .statistics-panel .statistics-sub a:hover h2, #root #component-root .statistics-panel .statistics-sub a:hover .count-sub {
+          color: #568db8; }
+
+@media only screen and (max-width: 1000px) {
+  #root #component-root {
+    flex-flow: column nowrap;
+    align-items: center; }
+    #root #component-root .statistics-panel:first-child {
+      margin-bottom: 30px; }
+    #root #component-root .statistics-panel {
+      flex-basis: auto;
+      width: 100%;
+      max-width: 600px; } }
