@@ -8,7 +8,7 @@ GUI for statistical elements on bibbox.bbmri-eric.eu
 ### Statistic values
 The statistic values are all fetched from Elastic Search. While The left side of the statistics overview is calculated automatically, the right side has to be updated by hand. To do this, open up Postman or any other Request Tool and run the following request:
 
-PUT -> http://elastic-el.demo.bibbox.org/bibbox/technical/1
+PUT -> http://bibbox-hq-elastic.tools.bbmri-eric.eu/bibbox/technical/1
 
 Body (JSON):
 {
