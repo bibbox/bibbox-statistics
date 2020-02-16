@@ -15,7 +15,7 @@ Body (JSON):
 	"store_apps": 41,
 	"apps_reviewed": 19,
 	"docker_images": 34,
-	"docker_downloads": 3285,
+	"docker_downloads": 61839,
 	"git_commits": 3710
 }
 
